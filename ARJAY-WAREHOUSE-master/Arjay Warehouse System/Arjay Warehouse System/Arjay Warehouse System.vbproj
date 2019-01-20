@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Arjay_Warehouse_System.My.MyApplication</StartupObject>
+    <RootNamespace>Arjay_Warehouse_System</RootNamespace>
+    <AssemblyName>Arjay Warehouse System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Arjay Warehouse System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Arjay Warehouse System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Correction Form.Designer.vb">
+      <DependentUpon>Admin Correction Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Correction Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Create Account Landing Page.Designer.vb">
+      <DependentUpon>Admin Create Account Landing Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Create Account Landing Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Login.Designer.vb">
+      <DependentUpon>Admin Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel.Designer.vb">
+      <DependentUpon>Admin Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Self Help Password Reset.Designer.vb">
+      <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Self Help Password Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caution Error.Designer.vb">
+      <DependentUpon>Caution Error.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caution Error.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart.Designer.vb">
+      <DependentUpon>chart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consignor Modification.Designer.vb">
+      <DependentUpon>Consignor Modification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consignor Modification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consignor Registration Form.Designer.vb">
+      <DependentUpon>Consignor Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consignor Registration Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consignors Address Book.Designer.vb">
+      <DependentUpon>Consignors Address Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consignors Address Book.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correction Ticket Dispatch.Designer.vb">
+      <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Correction Ticket Dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create A Dispatch Personnel Account.Designer.vb">
+      <DependentUpon>Create A Dispatch Personnel Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create A Dispatch Personnel Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Admin Account.Designer.vb">
+      <DependentUpon>Create Admin Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Admin Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Receiving Personnel Account.Designer.vb">
+      <DependentUpon>Create Receiving Personnel Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Receiving Personnel Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Access Admin Panel.Designer.vb">
+      <DependentUpon>Delete Access Admin Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access Admin Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Access for an ADMIN admin.Designer.vb">
+      <DependentUpon>Delete Access for an ADMIN admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access for an ADMIN admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Access for Dispatch Admin function.Designer.vb">
+      <DependentUpon>Delete Access for Dispatch Admin function.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access for Dispatch Admin function.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Access for Receiving admin function.Designer.vb">
+      <DependentUpon>Delete Access for Receiving admin function.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access for Receiving admin function.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Consignor Records.Designer.vb">
+      <DependentUpon>Delete Consignor Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Consignor Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch Login.Designer.vb">
+      <DependentUpon>Dispatch Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch Panel.Designer.vb">
+      <DependentUpon>Dispatch Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch Self Help Reset Password.Designer.vb">
+      <DependentUpon>Dispatch Self Help Reset Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch Self Help Reset Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee database lookup.Designer.vb">
+      <DependentUpon>Employee database lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee database lookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Registration Form.Designer.vb">
+      <DependentUpon>Employee Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Registration Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry Log Viewer.Designer.vb">
+      <DependentUpon>Entry Log Viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entry Log Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incoming.Designer.vb">
+      <DependentUpon>Incoming.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Incoming.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Modification Events .Designer.vb">
+      <DependentUpon>Inventory Modification Events .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Modification Events .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Modification.Designer.vb">
+      <DependentUpon>Inventory Modification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Modification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice Copy.Designer.vb">
+      <DependentUpon>Invoice Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice Copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locker Registration Form.Designer.vb">
+      <DependentUpon>Locker Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Locker Registration Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login As.Designer.vb">
+      <DependentUpon>Login As.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login As.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="outgoing_dispatch.Designer.vb">
+      <DependentUpon>outgoing_dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="outgoing_dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Reset Admin Panel.Designer.vb">
+      <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password Reset Admin Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Reset for an Admin.Designer.vb">
+      <DependentUpon>Password Reset for an Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password Reset for an Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Reset for Dispatch.Designer.vb">
+      <DependentUpon>Password Reset for Dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password Reset for Dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Reset for Receiving Personnel.Designer.vb">
+      <DependentUpon>Password Reset for Receiving Personnel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password Reset for Receiving Personnel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving Login.Designer.vb">
+      <DependentUpon>Receiving Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving Panel.Designer.vb">
+      <DependentUpon>Receiving Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving Self Help Password Resetvb.Designer.vb">
+      <DependentUpon>Receiving Self Help Password Resetvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving Self Help Password Resetvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Consignor Record.Designer.vb">
+      <DependentUpon>Update Consignor Record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update Consignor Record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_admin.Designer.vb">
+      <DependentUpon>user_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_dispatch.Designer.vb">
+      <DependentUpon>user_dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_receiving.Designer.vb">
+      <DependentUpon>user_receiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_receiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View ADMIN Actions for Account Modifications.Designer.vb">
+      <DependentUpon>View ADMIN Actions for Account Modifications.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View ADMIN Actions for Account Modifications.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Correction Request.Designer.vb">
+      <DependentUpon>View Correction Request.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View Correction Request.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Log for Consignor Modification.Designer.vb">
+      <DependentUpon>View Log for Consignor Modification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View Log for Consignor Modification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_user-panel.Designer.vb">
+      <DependentUpon>view_user-panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_user-panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin Correction Form.resx">
+      <DependentUpon>Admin Correction Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Create Account Landing Page.resx">
+      <DependentUpon>Admin Create Account Landing Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Login.resx">
+      <DependentUpon>Admin Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel.resx">
+      <DependentUpon>Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Self Help Password Reset.resx">
+      <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caution Error.resx">
+      <DependentUpon>Caution Error.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart.resx">
+      <DependentUpon>chart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consignor Modification.resx">
+      <DependentUpon>Consignor Modification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consignor Registration Form.resx">
+      <DependentUpon>Consignor Registration Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consignors Address Book.resx">
+      <DependentUpon>Consignors Address Book.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correction Ticket Dispatch.resx">
+      <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create A Dispatch Personnel Account.resx">
+      <DependentUpon>Create A Dispatch Personnel Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Admin Account.resx">
+      <DependentUpon>Create Admin Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Receiving Personnel Account.resx">
+      <DependentUpon>Create Receiving Personnel Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access Admin Panel.resx">
+      <DependentUpon>Delete Access Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access for an ADMIN admin.resx">
+      <DependentUpon>Delete Access for an ADMIN admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access for Dispatch Admin function.resx">
+      <DependentUpon>Delete Access for Dispatch Admin function.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access for Receiving admin function.resx">
+      <DependentUpon>Delete Access for Receiving admin function.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Consignor Records.resx">
+      <DependentUpon>Delete Consignor Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch Login.resx">
+      <DependentUpon>Dispatch Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch Panel.resx">
+      <DependentUpon>Dispatch Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch Self Help Reset Password.resx">
+      <DependentUpon>Dispatch Self Help Reset Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee database lookup.resx">
+      <DependentUpon>Employee database lookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Registration Form.resx">
+      <DependentUpon>Employee Registration Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry Log Viewer.resx">
+      <DependentUpon>Entry Log Viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incoming.resx">
+      <DependentUpon>Incoming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Modification Events .resx">
+      <DependentUpon>Inventory Modification Events .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Modification.resx">
+      <DependentUpon>Inventory Modification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice Copy.resx">
+      <DependentUpon>Invoice Copy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locker Registration Form.resx">
+      <DependentUpon>Locker Registration Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login As.resx">
+      <DependentUpon>Login As.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outgoing_dispatch.resx">
+      <DependentUpon>outgoing_dispatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Reset Admin Panel.resx">
+      <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Reset for an Admin.resx">
+      <DependentUpon>Password Reset for an Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Reset for Dispatch.resx">
+      <DependentUpon>Password Reset for Dispatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Reset for Receiving Personnel.resx">
+      <DependentUpon>Password Reset for Receiving Personnel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving Login.resx">
+      <DependentUpon>Receiving Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving Panel.resx">
+      <DependentUpon>Receiving Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving Self Help Password Resetvb.resx">
+      <DependentUpon>Receiving Self Help Password Resetvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Consignor Record.resx">
+      <DependentUpon>Update Consignor Record.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_admin.resx">
+      <DependentUpon>user_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_dispatch.resx">
+      <DependentUpon>user_dispatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_receiving.resx">
+      <DependentUpon>user_receiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View ADMIN Actions for Account Modifications.resx">
+      <DependentUpon>View ADMIN Actions for Account Modifications.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Correction Request.resx">
+      <DependentUpon>View Correction Request.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Log for Consignor Modification.resx">
+      <DependentUpon>View Log for Consignor Modification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_user-panel.resx">
+      <DependentUpon>view_user-panel.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_guy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dispatch_first_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Receiving_first_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timein_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_animation.gif" />
+    <None Include="Resources\web_nga.png" />
+    <None Include="Resources\update5.png" />
+    <None Include="Resources\validate5.png" />
+    <None Include="Resources\update4.png" />
+    <None Include="Resources\validate4.png" />
+    <None Include="Resources\update3.png" />
+    <None Include="Resources\validate3.png" />
+    <None Include="Resources\update2.png" />
+    <None Include="Resources\validate2.png" />
+    <None Include="Resources\web-design1.png" />
+    <None Include="Resources\web-design.png" />
+    <None Include="Resources\website3.png" />
+    <None Include="Resources\web.png" />
+    <None Include="Resources\validate1.png" />
+    <None Include="Resources\website2.png" />
+    <None Include="Resources\website1.png" />
+    <None Include="Resources\website.png" />
+    <None Include="Resources\update1.png" />
+    <None Include="Resources\validate.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\worker2.png" />
+    <None Include="Resources\worker1.png" />
+    <None Include="Resources\worker.png" />
+    <None Include="Resources\vision.png" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\warehouse-inventory-icon-33851.png" />
+    <None Include="Resources\visualization.png" />
+    <None Include="Resources\view_access_log.png" />
+    <None Include="Resources\view-correction_request1.png" />
+    <None Include="Resources\view-correction_request.png" />
+    <None Include="Resources\Caution.png" />
+    <None Include="Resources\admin_guy1.png" />
+    <None Include="Resources\address-book.png" />
+    <None Include="Resources\reset_self_help.png" />
+    <None Include="Resources\Inventory.png" />
+    <None Include="Resources\problem.png" />
+    <None Include="Resources\address-book1.png" />
+    <None Include="Resources\problem1.png" />
+    <None Include="Resources\reset_self_help1.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\lockers_admin_panel_first_page.png" />
+    <None Include="Resources\password_reset_admin_panel.png" />
+    <None Include="Resources\admin_panel_view_incident_request.png" />
+    <None Include="Resources\reset_self_help2.png" />
+    <None Include="Resources\Admin_panel_register_new_employee.png" />
+    <None Include="Resources\consignor.png" />
+    <None Include="Resources\add_consignor.png" />
+    <None Include="Resources\add_user_admin_panel.png" />
+    <None Include="Resources\remove-friend.png" />
+    <None Include="Resources\employee_lookup.png" />
+    <None Include="Resources\farmer_x.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\logistic-icon-png-12709.png" />
+    <None Include="Resources\add_account.png" />
+    <None Include="Resources\admin_first_page.png" />
+    <None Include="Resources\receiving.png" />
+    <None Include="Resources\businessman.png" />
+    <None Include="Resources\exit_round.png" />
+    <None Include="Resources\exit_main.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\d16ee50246d0a41f8cac9656cfa34990.png" />
+    <None Include="Resources\businessman1.png" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\pass_reset.png" />
+    <None Include="Resources\businessman2.png" />
+    <None Include="Resources\close2.png" />
+    <None Include="Resources\farmer_nga.png" />
+    <None Include="Resources\close3.png" />
+    <None Include="Resources\modify_huge.png" />
+    <None Include="Resources\delete_account.png" />
+    <None Include="Resources\export_to_excel.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\refresh_2.png" />
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\register.png" />
+    <None Include="Resources\cancel2.png" />
+    <None Include="Resources\reading.png" />
+    <None Include="Resources\export_to_excel1.png" />
+    <None Include="Resources\cancel3.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\browser.png" />
+    <None Include="Resources\agree.png" />
+    <None Include="Resources\cancel4.png" />
+    <None Include="Resources\paper-plane.png" />
+    <None Include="Resources\cancel5.png" />
+    <None Include="Resources\cancel6.png" />
+    <None Include="Resources\contract.png" />
+    <None Include="Resources\contract1.png" />
+    <None Include="Resources\cancel7.png" />
+    <None Include="Resources\contract2.png" />
+    <None Include="Resources\cancel8.png" />
+    <None Include="Resources\cancel9.png" />
+    <None Include="Resources\cancel10.png" />
+    <None Include="Resources\cancel11.png" />
+    <None Include="Resources\documents.png" />
+    <None Include="Resources\cancel12.png" />
+    <None Include="Resources\cancel13.png" />
+    <None Include="Resources\lock1.png" />
+    <None Include="Resources\browser1.png" />
+    <None Include="Resources\cancel14.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\export_to_excel2.png" />
+    <None Include="Resources\cancel15.png" />
+    <None Include="Resources\cleaning.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\eraser1.png" />
+    <None Include="Resources\magnifying_glass-small.png" />
+    <None Include="Resources\eraser_maliit.png" />
+    <None Include="Resources\cancel16.png" />
+    <None Include="Resources\eraser_maliit1.png" />
+    <None Include="Resources\cancel17.png" />
+    <None Include="Resources\iconfinder_document-print-preview_23217.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\register1.png" />
+    <None Include="Resources\cancel18.png" />
+    <None Include="Resources\paper-plane1.png" />
+    <None Include="Resources\diskette.png" />
+    <None Include="Resources\cancel19.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\iconfinder_document-print-preview_232171.png" />
+    <None Include="Resources\cancel20.png" />
+    <None Include="Resources\cancel21.png" />
+    <None Include="Resources\database_delete_small.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\close4.png" />
+    <None Include="Resources\cancel22.png" />
+    <None Include="Resources\cancel23.png" />
+    <None Include="Resources\cancel24.png" />
+    <None Include="Resources\browser2.png" />
+    <None Include="Resources\lock2.png" />
+    <None Include="Resources\cancel25.png" />
+    <None Include="Resources\cancel26.png" />
+    <None Include="Resources\cancel27.png" />
+    <None Include="Resources\export_to_excel3.png" />
+    <None Include="Resources\cancel28.png" />
+    <None Include="Resources\export_to_excel4.png" />
+    <None Include="Resources\cancel29.png" />
+    <None Include="Resources\exit %282%29.png" />
+    <None Include="Resources\exit_sign_gif.gif" />
+    <None Include="Resources\close5.png" />
+    <None Include="Resources\address-book2.png" />
+    <None Include="Resources\close6.png" />
+    <None Include="Resources\close7.png" />
+    <None Include="Resources\export_to_excel5.png" />
+    <None Include="Resources\cancel30.png" />
+    <None Include="Resources\export_to_excel6.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\group2.png" />
+    <None Include="Resources\idea.png" />
+    <None Include="Resources\lg.dual-gear-loading-icon.gif" />
+    <None Include="Resources\500.gif" />
+    <None Include="Resources\product_availability.png" />
+    <Content Include="Resources\Rocket.gif" />
+    <None Include="Resources\seo.png" />
+    <None Include="Resources\skills.png" />
+    <None Include="Resources\skills1.png" />
+    <None Include="Resources\skills2.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\search-user_2.png" />
+    <None Include="Resources\search-user.png" />
+    <Content Include="Resources\team_rocket.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
